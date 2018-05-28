@@ -186,7 +186,20 @@ $(function(){
                 alert('服务器出错，注册失败');
             }else if(data.result==7){
                 // 登录框和注册框切换
-                $('.to_login').click();
+                // $('.to_login').click();
+
+                // 注册成功直接登陆
+                $.post('/user/login',{
+                    'mobile':mobile,
+                    'pwd':password,
+                    'csrf_token':csrf_token
+                },function (data) {
+                    $('.register_form_con').hide();  // 注册框隐藏
+                    $('.user_btns').hide();
+                    $('.user_login').show();
+                    $('.lgin_pic').attr('src', '/static/news/images/' + data.avatar);
+                    $('#nick_name').text(data.nick_name);
+                })
             }
         });
 

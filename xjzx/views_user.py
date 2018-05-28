@@ -30,7 +30,9 @@ def sms_yzm():
     # 获取数据：手机号，图片码
     dict1 = request.args
     mobile = dict1.get('mobile')
-    image_yzm = dict1.get('image_yzm')
+    # 忽略大小写
+    image_yzm = dict1.get('image_yzm').upper()
+    print(image_yzm)
 
     # 对比图片验证码
     if image_yzm != session['image_yzm']:
@@ -55,7 +57,7 @@ def register():
     # 1.接收数据
     dict1 = request.form
     mobile = dict1.get('mobile')
-    image_yzm = dict1.get('image_yzm')
+    image_yzm = dict1.get('image_yzm').upper()
     sms_yzm = dict1.get('sms_yzm')
     pwd = dict1.get('pwd')
 
