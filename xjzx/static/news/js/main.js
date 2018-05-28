@@ -193,7 +193,7 @@ $(function(){
 
     })
 
-    //　绑定退出
+    //　TODO 退出按钮点击
     $('#logout').click(function () {
         $.post('/user/logout',{
             'csrf_token':$('#csrf_token').val()
@@ -206,6 +206,8 @@ $(function(){
     });
 })
 var imageCodeId = ""
+var i =5;
+var time1=null;
 
 // TODO 生成一个图片验证码的编号，并设置页面中图片验证码img标签的src属性
 function generateImageCode() {
@@ -213,6 +215,19 @@ function generateImageCode() {
     // 防止浏览器缓存
     $('.get_pic_code').attr('src',src+1); // /user/image_yzm?11
 }
+
+
+function djs() {
+    $(".get_code").html(i + '秒后重新发送');
+    if(i==0){
+        clearInterval(time1);
+        i = 5
+        $(".get_code").html('点击获取验证码');
+        $(".get_code").attr('onclick',"sendSMSCode();");
+    }
+    i -= 1;
+}
+
 
 // 发送短信验证码
 function sendSMSCode() {
@@ -239,9 +254,13 @@ function sendSMSCode() {
         'image_yzm':imageCode
     },function (data) {
         if(data.result==1){
+
             alert('图片验证码错误');
+            $(".get_code").attr("onclick", "sendSMSCode();");
         }else if(data.result==2){
             alert('请查看短信');
+            time1 = setInterval("djs()",1000);
+            i = 5;
         }
     });
 }
