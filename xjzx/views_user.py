@@ -1,4 +1,5 @@
-from flask import Blueprint, session, make_response, jsonify
+import functools
+from flask import Blueprint, session, make_response, jsonify, render_template, redirect
 
 # 首页不加前缀
 from flask import current_app
@@ -115,12 +116,12 @@ def login():
             # 登陆成功，状态保持
             session['user_id'] = user.id
             # 将头像，昵称返回给浏览器显示
-            return jsonify(result=3, avatar=user.avatar, nick_name=user.nick_name)
+            return jsonify(result=3, avatar_url=user.avatar_url, nick_name=user.nick_name)
         else:
-            # 　密码错误
+            # 密码错误
             return jsonify(result=4)
     else:
-        # 　mobile错误
+        # mobile错误
         return jsonify(result=2)
 
 
@@ -128,3 +129,106 @@ def login():
 def logout():
     session.pop('user_id')
     return jsonify(result=1)
+
+
+# 定义验证登陆的装饰器
+def login_required(f):
+    @functools.wraps(f)  # 返回f函数的名称，而不是用fun2替代这个函数的名称
+    def fun2(*args, **kwargs):
+        if 'user_id' not in session:
+            return redirect('/')
+        # 在视图函数上添加的装饰器，必须要将视图返回的response再次返回给浏览器
+        return f(*args, **kwargs)
+
+    return fun2
+
+
+@user_blueprint.route('/')
+@login_required
+def index():
+    # 从session中获取用户编号，创建user对象，传给模板显示
+    user = UserInfo.query.get(session['user_id'])
+    return render_template('news/user.html',
+                           user=user,
+                           title='用户中心')
+
+
+# 定义用户视图
+# 基本资料
+@user_blueprint.route('/base', methods=['GET', 'POST'])
+@login_required
+def base():
+    # 获取当前用户编号
+    user_id = session['user_id']
+    # 查询当前用户对象
+    user = UserInfo.query.get(user_id)
+
+    # 如果是get请求，展示数据
+    if request.method == 'GET':
+        return render_template('news/user_base_info.html', user=user)
+    # 如果是post请求则修改数据并保存
+    elif request.method == 'POST':
+        # 接收数据
+        dict1 = request.form
+        signature = dict1.get('signature')
+        nick_name = dict1.get('nick_name')
+        gender = dict1.get('gender')
+        # 根据user_id查询数据，并修改
+        user.signature = signature
+        user.nick_name = nick_name
+        user.gender = bool(gender)
+        # 提交保存
+        try:
+            db.session.commit()
+        except:
+            current_app.logger_xjzx.error('修改用户基本信息时连接数据库失败')
+            return jsonify(result=2)
+        # 响应
+        return jsonify(result=1)
+
+
+@user_blueprint.route('/pic', methods=['GET', 'POST'])
+@login_required
+def pic():
+    user=UserInfo.query.get(session['user_id'])
+    if request.method=='GET':
+        return render_template('news/user_pic_info.html',user=user)
+    elif request.method=='POST':
+        # 接收文件
+        f1 = request.files.get('avatar')
+        # 保存文件到骑牛云，并返回文件名
+        from utils.qiniu_xjzx import upload_pic
+        f1_name = upload_pic(f1)
+        # 将文件名保存到数据库
+        user.avatar = f1_name
+        # 提交
+        db.session.commit()
+        # 响应
+        return jsonify(result=1,avatar_url=user.avatar_url)
+
+
+
+@user_blueprint.route('/follow', methods=['GET', 'POST'])
+@login_required
+def follow():
+    pass
+
+@user_blueprint.route('/pwd', methods=['GET', 'POST'])
+@login_required
+def pwd():
+    pass
+
+@user_blueprint.route('/collect', methods=['GET', 'POST'])
+@login_required
+def collect():
+    pass
+
+@user_blueprint.route('/release', methods=['GET', 'POST'])
+@login_required
+def release():
+    pass
+
+@user_blueprint.route('/newslist', methods=['GET', 'POST'])
+@login_required
+def newslist():
+    pass

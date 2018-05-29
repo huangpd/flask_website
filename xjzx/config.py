@@ -26,9 +26,8 @@ class Config(object):
     # 七牛云配置
     QINIU_AK = 'Hu8VMQ8pR96QW2BrYCObXM4LgkllwRP6Ai9FTOgM'
     QINIU_SK = 'p2EPAgM-ko7jVcoHwIHIpoLJE5Ccrq37-5TDGsVF'
-    # 下面的还没改
-    QINIU_BUCKET = 'itcast20171104'
-    QINIU_URL = 'http://oyvzbpqij.bkt.clouddn.com/'
+    QINIU_BUCKET = 'blank'
+    QINIU_URL = 'http://p9hnzhvrz.bkt.clouddn.com/'
 
 
 # 进入开发模式下就把调试打开

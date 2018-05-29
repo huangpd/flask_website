@@ -4,12 +4,15 @@ from flask import Flask
 def create_app(config):
     app = Flask(__name__)
 
+    app.config.from_object(config)
+
     # CSRF保护
     from flask_wtf.csrf import CSRFProtect
     CSRFProtect(app)
 
-
-    app.config.from_object(config)
+    # Session 初始化,　为什么不能放在config之前呢
+    from flask_session import Session
+    Session(app)
 
     # 注册蓝图
     from views_admin import admin_bluepirnt

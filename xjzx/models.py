@@ -1,4 +1,5 @@
 import pymysql
+from flask import current_app
 from werkzeug.security import generate_password_hash, check_password_hash
 
 pymysql.install_as_MySQLdb()
@@ -76,7 +77,7 @@ class UserInfo(db.Model, BaseModel):
     id = db.Column(db.Integer, primary_key=True)
     avatar = db.Column(db.String(50), default='user_pic.png')
     nick_name = db.Column(db.String(20))
-    signature = db.Column(db.String(200))
+    signature = db.Column(db.String(200),default='说点什么吧')
     public_count = db.Column(db.Integer, default=0)
     follow_count = db.Column(db.Integer, default=0)
     mobile = db.Column(db.String(11))
@@ -117,9 +118,9 @@ class UserInfo(db.Model, BaseModel):
     def check_pwd(self, pwd):
         return check_password_hash(self.password_hash, pwd)
 
-        # @property
-        # def avatar_url(self):
-        #     return current_app.config.get('QINIU_URL') + self.avatar
+    @property
+    def avatar_url(self):
+        return current_app.config.get('QINIU_URL') + self.avatar
 
 
 class NewsComment(db.Model, BaseModel):
