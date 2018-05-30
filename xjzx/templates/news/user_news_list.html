@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>用户中心</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.pagination.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/jquery.pagination.min.js"></script>
+    {% include 'news/user_head.html' %}
 </head>
 <body class="inframe_body">
-    <div class="news_list">
-        <h3>新闻列表</h3>
-        <ul class="article_list">
-            <li><a href="user_news_release.html">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="pass">已通过</em><span>2018-1-17</span></li>
-            <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="pass">已通过</em><span>2018-1-17</span></li>
-            <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="review">审核中</em><span>2018-1-17</span></li>
-            <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="review">审核中</em><span>2018-1-17</span></li>
+<div class="news_list">
+    <h3>新闻列表</h3>
+    <ul class="article_list">
+        {% for news in news_list %}
             <li>
-                <a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a>
-                <em class="nopass">未通过</em>
-                <span>2018-1-17</span>
-                <b>未通过原因：因为写的太boring,因为写的太boring,因为写的太boring,因为写的太boring,</b>
+                <a href="/user/release?news_id={{ news.id }}">{{ news.title }}</a>
+                <em class="nopass">
+                    {% if news.status==1 %}
+                        <em class="review">审核中</em>
+                    {% elif news.status==2 %}
+                        <em class="pass">已通过</em>
+                    {% elif news.status ==3 %}
+                        <em class="nopass">未通过</em>
+                    {% endif %}
+                </em>
+                <span>{{ news.update_time }}</span>
+                {% if news.status ==3 %}
+                    <b>{{ news.reason }}</b>
+                {% endif %}
             </li>
-            <li>
-                <a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a>
-                <em class="nopass">未通过</em>
-                <span>2018-1-17</span>
-                <b>未通过原因：因为写的太煽情,因为写的太煽情,因为写的太煽情,因为写的太煽情,</b>
-            </li>
-        </ul>
-        <div id="pagination" class="page"></div>
-        <script>
-            // 调用父页面的方法改变菜单指示
-            // window.parent.fnChangeMenu(2);
+        {% endfor %}
+    </ul>
+    <div id="pagination" class="page"></div>
+    <script>
+        // 调用父页面的方法改变菜单指示
+        // window.parent.fnChangeMenu(2);
 
-            $(function(){
-                $("#pagination").pagination({
-                    currentPage: 2,
-                    totalPage: 3,
-                    callback: function(current) {
-                        alert('ok!');
-                    }
-                });
+        $(function () {
+            $("#pagination").pagination({
+                currentPage: {{ page }},
+                totalPage: {{ total_page }},
+                callback: function (current) {
+{#                    alert('ok!');#}
+                    location.href='?page='+current;
+                }
             });
-        </script>
-       
-    </div>
+        });
+    </script>
+
+</div>
 </body>
 </html>
