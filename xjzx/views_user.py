@@ -1,11 +1,11 @@
 import functools
 from flask import Blueprint, session, make_response, jsonify, render_template, redirect
-
+from datetime import datetime
 # 首页不加前缀
 from flask import current_app
 from flask import request
 
-from models import UserInfo, db, NewsInfo
+from models import UserInfo, db, NewsInfo, NewsCategory
 
 user_blueprint = Blueprint('user', __name__, url_prefix='/user')
 
@@ -322,7 +322,80 @@ def collect():
 @user_blueprint.route('/release', methods=['GET', 'POST'])
 @login_required
 def release():
-    return render_template('news/user_news_release.html')
+    # 查询所有的分类，供编辑人员选择
+    category_list = NewsCategory.query.all()
+
+    # 接收新闻的编号, 为了确认是创建还是修改
+    news_id = request.args.get('news_id')
+
+    if request.method == 'GET':
+        if news_id is None:
+            # 展示页面
+            return render_template(
+                'news/user_news_release.html',
+                category_list=category_list,
+                news=None
+            )
+        else:
+            # 如果有新闻编号存在，则进行修改操作，所以需要查询到原新闻并展示
+            news = NewsInfo.query.get(int(news_id))
+            return render_template(
+                'news/user_news_release.html',
+                category_list=category_list,
+                news=news
+            )
+    elif request.method == 'POST':
+        # 新闻的添加处理
+        # 1.接收请求
+        dict1 = request.form
+        title = dict1.get('title')
+        category_id = dict1.get('category')
+        summary = dict1.get('summary')
+        content = dict1.get('content')
+        # 接收新闻图片
+        news_pic = request.files.get('news_pic')
+
+        if news_id is None:
+            # 2.验证
+            if not all([title, category_id, summary, content, news_pic]):
+                return render_template(
+                    'news/user_news_release.html',
+                    category_list=category_list,
+                    msg='请将数据填写完整',
+                )
+
+        else:
+            if not all([title, category_id, summary, content]):
+                return render_template(
+                    'news/user_news_release.html',
+                    category_list=category_list,
+                    msg='请将数据填写完整',
+                )
+
+        # 上传图片到七牛云, 修改文章内容的时候，默认不改图片，检查一下到底要不要改
+        if news_pic:
+            from utils.qiniu_xjzx import upload_pic
+            filename = upload_pic(news_pic)
+
+        # 3.添加
+        if news_id is None:
+            news = NewsInfo()
+        else:
+            news = NewsInfo.query.get(news_id)
+        news.category_id = int(category_id)
+        if news_pic:
+            news.pic = filename
+        news.title = title
+        news.summary = summary
+        news.content = content
+        news.status = 1
+        news.update_time=datetime.now()
+        news.user_id = session['user_id']
+        # 4.提交
+        db.session.add(news)
+        db.session.commit()
+        # 5.响应
+        return redirect('/user/newslist')
 
 
 # 新闻列表

@@ -24,8 +24,8 @@
     <table id="18" parent="2" name="news_category"/>
     <table id="19" parent="2" name="news_comment"/>
     <table id="20" parent="2" name="news_info"/>
-    <table id="21" parent="2" name="tb_news_news"/>
-    <table id="22" parent="2" name="tb_user_follow"/>
+    <table id="21" parent="2" name="tb_user_follow"/>
+    <table id="22" parent="2" name="tb_user_news"/>
     <table id="23" parent="2" name="user_info"/>
     <column id="24" parent="17" name="version_num">
       <Position>1</Position>
@@ -211,64 +211,64 @@
       <RefTableName>user_info</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="67" parent="21" name="user_id">
+    <column id="67" parent="21" name="origin_user_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="68" parent="21" name="news_id">
+    <column id="68" parent="21" name="follow_user_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="69" parent="21" name="news_id">
-      <ColNames>news_id</ColNames>
-    </index>
-    <key id="70" parent="21" name="PRIMARY">
-      <ColNames>user_id
-news_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="71" parent="21" name="tb_news_news_ibfk_2">
-      <ColNames>user_id</ColNames>
-      <RefSchemaName>xjzx9</RefSchemaName>
-      <RefTableName>user_info</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="72" parent="21" name="tb_news_news_ibfk_1">
-      <ColNames>news_id</ColNames>
-      <RefSchemaName>xjzx9</RefSchemaName>
-      <RefTableName>news_info</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="73" parent="22" name="origin_user_id">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="74" parent="22" name="follow_user_id">
-      <Position>2</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="75" parent="22" name="follow_user_id">
+    <index id="69" parent="21" name="follow_user_id">
       <ColNames>follow_user_id</ColNames>
     </index>
-    <key id="76" parent="22" name="PRIMARY">
+    <key id="70" parent="21" name="PRIMARY">
       <ColNames>origin_user_id
 follow_user_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="77" parent="22" name="tb_user_follow_ibfk_2">
+    <foreign-key id="71" parent="21" name="tb_user_follow_ibfk_2">
       <ColNames>origin_user_id</ColNames>
       <RefSchemaName>xjzx9</RefSchemaName>
       <RefTableName>user_info</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="78" parent="22" name="tb_user_follow_ibfk_1">
+    <foreign-key id="72" parent="21" name="tb_user_follow_ibfk_1">
       <ColNames>follow_user_id</ColNames>
       <RefSchemaName>xjzx9</RefSchemaName>
       <RefTableName>user_info</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="73" parent="22" name="user_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="22" name="news_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="75" parent="22" name="news_id">
+      <ColNames>news_id</ColNames>
+    </index>
+    <key id="76" parent="22" name="PRIMARY">
+      <ColNames>user_id
+news_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="77" parent="22" name="tb_user_news_ibfk_2">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>xjzx9</RefSchemaName>
+      <RefTableName>user_info</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="78" parent="22" name="tb_user_news_ibfk_1">
+      <ColNames>news_id</ColNames>
+      <RefSchemaName>xjzx9</RefSchemaName>
+      <RefTableName>news_info</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="79" parent="23" name="create_time">

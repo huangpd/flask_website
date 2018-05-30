@@ -19,7 +19,7 @@ class BaseModel(object):
 
 
 tb_news_collect = db.Table(
-    'tb_news_news',
+    'tb_user_news',
     db.Column('user_id', db.Integer, db.ForeignKey('user_info.id'), primary_key=True),
     db.Column('news_id', db.Integer, db.ForeignKey('news_info.id'), primary_key=True)
 )
@@ -55,9 +55,9 @@ class NewsInfo(db.Model, BaseModel):
     # news.comments
     comments = db.relationship('NewsComment', backref='news', lazy='dynamic', order_by='NewsComment.id.desc()')
 
-    # @property
-    # def pic_url(self):
-    #     return current_app.config.get('QINIU_URL') + self.pic
+    @property
+    def pic_url(self):
+        return current_app.config.get('QINIU_URL') + self.pic
     #
     # def to_index_dict(self):
     #     return {
