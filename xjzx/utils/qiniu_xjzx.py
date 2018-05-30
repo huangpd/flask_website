@@ -9,7 +9,7 @@ def upload_pic(f1):
     secret_key = current_app.config.get('QINIU_SK')
     # 空间名称
     bucket_name = current_app.config.get('QINIU_BUCKET')
-    # 构建鉴权对象
+    # 构建鉴权对象 ---> 其实就是身份认证
     q = Auth(access_key, secret_key)
     # 生成上传 Token
     token = q.upload_token(bucket_name)

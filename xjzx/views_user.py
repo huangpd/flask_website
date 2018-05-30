@@ -176,7 +176,7 @@ def base():
         # 根据user_id查询数据，并修改
         user.signature = signature
         user.nick_name = nick_name
-        user.gender = bool(gender)
+        user.gender = True if gender == 'True' else False
         # 提交保存
         try:
             db.session.commit()
@@ -190,10 +190,10 @@ def base():
 @user_blueprint.route('/pic', methods=['GET', 'POST'])
 @login_required
 def pic():
-    user=UserInfo.query.get(session['user_id'])
-    if request.method=='GET':
-        return render_template('news/user_pic_info.html',user=user)
-    elif request.method=='POST':
+    user = UserInfo.query.get(session['user_id'])
+    if request.method == 'GET':
+        return render_template('news/user_pic_info.html', user=user)
+    elif request.method == 'POST':
         # 接收文件
         f1 = request.files.get('avatar')
         # 保存文件到骑牛云，并返回文件名
@@ -204,8 +204,7 @@ def pic():
         # 提交
         db.session.commit()
         # 响应
-        return jsonify(result=1,avatar_url=user.avatar_url)
-
+        return jsonify(result=1, avatar_url=user.avatar_url)
 
 
 @user_blueprint.route('/follow', methods=['GET', 'POST'])
@@ -213,20 +212,24 @@ def pic():
 def follow():
     pass
 
+
 @user_blueprint.route('/pwd', methods=['GET', 'POST'])
 @login_required
 def pwd():
     pass
+
 
 @user_blueprint.route('/collect', methods=['GET', 'POST'])
 @login_required
 def collect():
     pass
 
+
 @user_blueprint.route('/release', methods=['GET', 'POST'])
 @login_required
 def release():
     pass
+
 
 @user_blueprint.route('/newslist', methods=['GET', 'POST'])
 @login_required
