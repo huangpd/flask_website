@@ -148,7 +148,7 @@ def login_required(f):
     return fun2
 
 
-# 首页
+# 用户中心首页
 @user_blueprint.route('/')
 @login_required
 def index():
