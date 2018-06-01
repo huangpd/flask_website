@@ -361,7 +361,7 @@ def release():
                 return render_template(
                     'news/user_news_release.html',
                     category_list=category_list,
-                    msg='请将数据填写完整',
+                    msg='请将数据填写完整'
                 )
 
         else:
@@ -369,7 +369,7 @@ def release():
                 return render_template(
                     'news/user_news_release.html',
                     category_list=category_list,
-                    msg='请将数据填写完整',
+                    msg='请将数据填写完整'
                 )
 
         # 上传图片到七牛云, 修改文章内容的时候，默认不改图片，检查一下到底要不要改
