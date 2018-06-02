@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 
 def create_app(config):
@@ -40,4 +41,10 @@ def create_app(config):
     # 为全局的日志工具对象（flask app使用的）添加日志记录器
     logging.getLogger().addHandler(file_log_handler)
     app.logger_xjzx = logging
+
+    # 404错误处理
+    @app.errorhandler(404)
+    def handle404(e):
+        return render_template('news/404.html')
+
     return app
