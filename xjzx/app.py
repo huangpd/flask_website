@@ -42,6 +42,18 @@ def create_app(config):
     logging.getLogger().addHandler(file_log_handler)
     app.logger_xjzx = logging
 
+
+    # 从config中读取redis服务器的配置
+    host = app.config.get('REDIS_HOST')
+    port = app.config.get('REDIS_PORT')
+    db_redis = app.config.get('REDIS_DB')
+    # 将用户的评论存储到redis中
+    import redis
+    app.redis_client = redis.StrictRedis(host=host,port=port,db=db_redis)
+
+
+
+
     # 404错误处理
     @app.errorhandler(404)
     def handle404(e):

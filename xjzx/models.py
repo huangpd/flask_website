@@ -131,4 +131,5 @@ class NewsComment(db.Model, BaseModel):
     like_count = db.Column(db.Integer, default=0)
     comment_id = db.Column(db.Integer, db.ForeignKey('news_comment.id'))
     msg = db.Column(db.String(200))
+    # ???
     comments = db.relationship('NewsComment', lazy='dynamic')

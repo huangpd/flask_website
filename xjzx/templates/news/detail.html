@@ -3,6 +3,7 @@
 {% block head %}
     <script type="text/javascript" src="/static/news/js/vue.min.js"></script>
     <script type="text/javascript" src="/static/news/js/detail.js"></script>
+    <script type="text/javascript" src="/static/news/js/jquery.pagination.min.js"></script>
 
 {% endblock %}
 
@@ -74,31 +75,70 @@
                     </div>
                     <div class="user_name fl">[[comment.nick_name]]</div>
                     <div class="comment_text fl">[[comment.msg]]</div>
+
+                    <div class="reply_text_con fl" v-for="cback in comment.cback_list">
+                        <div class="user_name2">[[cback.nick_name]]</div>
+                        <div class="reply_text">[[cback.msg]]</div>
+                    </div>
+
+
                     <div class="comment_time fl">[[comment.create_time]]</div>
-                    <a href="javascript:;" class="comment_up fr">赞</a>
+                    <a href="javascript:;" v-if="comment.is_like == 1" :commentid="comment.id" class="comment_up has_comment_up fr">赞 <em>[[comment.like_count]]</em></a>
+                    <a href="javascript:;" v-else :commentid="comment.id" class="comment_up fr">赞 <em>[[comment.like_count]]</em></a>
                     <a href="javascript:;" class="comment_reply fr">回复</a>
                     <from class="reply_form fl">
                         <textarea  class="reply_input"></textarea>
-                        <input type="submit" name="" value="回复" class="reply_sub fr">
+                        <input type="button" :commentid="comment.id" value="回复" class="reply_sub fr">
                         <input type="reset" name="" value="取消" class="reply_cancel fr">
                     </from>
                 </div>
+
+                <div id="pagination" class="page"></div>
+
+                <script>
+                $(function () {
+{#                    $("#pagination").pagination({#}
+{#                        currentPage: {{ page }},#}
+{#                        totalPage: {{ total_page }},#}
+{#                        callback: function (current) {#}
+{#                            location.href='?page='+current;#}
+{#                        }#}
+{#                    });#}
+                });
+                </script>
+
             </div>
-
-
         </div>
+
+
         <div class="rank_con fr">
             <div class="author_card">
                 <a href="/user/{{ news.user.id }}" class="author_pic"><img src="{{ news.user.avatar_url }}" alt="author_pic"></a>
-                <a href="/user/{{ news.user.id }}" class="author_name">{{ news.user.nick_name }}</a>
+                <a href="/user/{{ news.user.id }}" class="author_name" value="{{ news.user.id }}">{{ news.user.nick_name }}</a>
+                <input type="hidden" id="user_id" value="{{ news.user.id }}">
                 <div class="author_resume">{{ news.user.nick_name }}</div>
                 <div class="writings"><span>总篇数</span><b>{{ news.user.public_count }}</b></div>
                 <div class="follows"><span>粉丝</span><b>{{ news.user.follow_count }}</b></div>
-                <a href="javascript:;" class="focus fr">关注</a>
-                <a href="javascript:;" class="focused fr"><span class="out">已关注</span><span class="over">取消关注</span></a>
+
+                {% if user %}
+                    {% if news.user in user.follow_user %}
+                        <a href="javascript:;" class="focus fr" style="display: none;">关注</a>
+                        <a href="javascript:;" class="focused fr"><span class="out">已关注</span><span class="over">取消关注</span></a>
+                    {% else %}
+                        <a href="javascript:;" class="focus fr" >关注</a>
+                        <a href="javascript:;" class="focused fr" style="display: none;"><span class="out">已关注</span><span class="over">取消关注</span></a>
+                    {% endif %}
+                {% else %}
+                    <a href="javascript:;" class="focus fr" style="display: none;">关注</a>
+                    <a href="javascript:;" class="focused fr"><span class="out">已关注</span><span class="over">取消关注</span></a>
+                {% endif %}
+
+
             </div>
             {% import 'news/macro.html' as macro1 %}
             {{ macro1.count_list_show(count_list) }}
         </div>
+
+
     </div>
 {% endblock %}
