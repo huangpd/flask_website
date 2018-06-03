@@ -197,6 +197,7 @@ def commentlist(news_id):
             # UserInfo中的comments的属性的反向引用
             'nick_name': comment.user.nick_name,
             'avatar': comment.user.avatar_url,
+            # 标记是否点赞
             'is_like': is_like
         }
 
@@ -267,6 +268,7 @@ def commentback(comment_id):
     return jsonify(result=3)
 
 
+# 关注
 @news_blueprint.route('/userfollow', methods=['POST'])
 def userfollow():
     # 当前登录用户user_id关注作者 follow_user_id
@@ -292,7 +294,29 @@ def userfollow():
     return jsonify(result=2, follow_count=follow_user.follow_count)
 
 
-@news_blueprint.route('/user/<int:user_id>')
+@news_blueprint.route('/user/<int:user_id>',methods=['GET','POST'])
 def other(user_id):
-    user = UserInfo.query.get(user_id)
-    return render_template('news/other.html', user=user)
+    if 'user_id' in session:
+        user = UserInfo.query.get(session['user_id'])
+    else:
+        user = None
+
+    other = UserInfo.query.get(user_id)
+    #
+    page = int(request.args.get('page', '1'))
+    # 对数据进行分页
+    pagination = other.news.order_by(NewsInfo.update_time.desc()).paginate(page, 6, False)
+    # 获取当前页的数据
+    news_list = pagination.items
+    # 获取总页数
+    total_page = pagination.pages
+
+    return render_template(
+        'news/other.html',
+        other=other,
+        user=user,
+        title='用户概况',
+        page=page,
+        news_list=news_list,
+        total_page=total_page
+    )
