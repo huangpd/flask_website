@@ -101,6 +101,25 @@ def register():
     return jsonify(result=7)
 
 
+# 统计登陆活跃数
+def login_hour_count():
+    now = datetime.now()
+    login_key = 'login%d_%d_%d' % (now.year, now.month, now.day)
+    login_prop = ["08:15", "09:15", "10:15", "11:15", "12:15", "13:15", "14:15", "15:15", "16:15", "17:15", "18:15",
+                  "19:15"]
+
+    for index, item in enumerate(login_prop):
+        if now.hour < index + 8 or (now.hour == index + 8 and now.minute <= 15):
+            count = int(current_app.redis_client.hget(login_key, item))
+            count += 1
+            current_app.redis_client.hset(login_key, item, count)
+            break
+    else:
+        count = int(current_app.redis_client.hget(login_key, "19:15"))
+        count += 1
+        current_app.redis_client.hset(login_key, "19:15", count)
+
+
 # 登陆
 @user_blueprint.route('/login', methods=['POST'])
 def login():
@@ -116,7 +135,10 @@ def login():
     user = UserInfo.query.filter_by(mobile=mobile).first()
 
     if user:
+        # 判断密码是否正确
         if user.check_pwd(pwd):
+            # 统计每小时登陆活跃数
+            login_hour_count()
             # 登陆成功，状态保持
             session['user_id'] = user.id
             # 将头像，昵称返回给浏览器显示
@@ -389,7 +411,7 @@ def release():
         news.summary = summary
         news.content = content
         news.status = 1
-        news.update_time=datetime.now()
+        news.update_time = datetime.now()
         news.user_id = session['user_id']
         # 4.提交
         db.session.add(news)
