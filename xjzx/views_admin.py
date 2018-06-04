@@ -9,9 +9,7 @@ from flask import render_template
 from flask import request
 from flask import session
 
-# from flask import current_app
-
-from models import UserInfo
+from models import UserInfo,NewsInfo
 
 admin_blueprint = Blueprint('admin', __name__, url_prefix='/admin')
 
@@ -137,8 +135,16 @@ def user_list():
 
 @admin_blueprint.route('/news_review')
 def news_review():
+    page = int(request.args.get('page', '1'))
+    pagenation = NewsInfo.query.order_by(NewsInfo.id).paginate(page, 10, False)
+    news_list = pagenation.items
+    total_page = pagenation.pages
+
     return render_template(
-        'admin/news_review.html'
+        'admin/news_review.html',
+        page=page,
+        news_list=news_list,
+        total_page=total_page
     )
 
 
