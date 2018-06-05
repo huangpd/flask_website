@@ -110,13 +110,22 @@ def login_hour_count():
 
     for index, item in enumerate(login_prop):
         if now.hour < index + 8 or (now.hour == index + 8 and now.minute <= 15):
-            count = int(current_app.redis_client.hget(login_key, item))
-            count += 1
+            # 修复当天没有登陆记录时，count在redis中查不到引起的报错问题
+            count = current_app.redis_client.hget(login_key, item)
+            if count is None:
+                count = 1
+            else:
+                count = int(count)
+                count += 1
             current_app.redis_client.hset(login_key, item, count)
             break
     else:
-        count = int(current_app.redis_client.hget(login_key, "19:15"))
-        count += 1
+        count = current_app.redis_client.hget(login_key, "19:15")
+        if count is None:
+            count = 1
+        else:
+            count = int(count)
+            count += 1
         current_app.redis_client.hset(login_key, "19:15", count)
 
 

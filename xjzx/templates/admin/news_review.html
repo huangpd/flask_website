@@ -8,12 +8,13 @@
 	<link rel="stylesheet" href="/static/admin/css/jquery.pagination.css">
 	<script type="text/javascript" src="/static/admin/js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="/static/admin/js/jquery.pagination.min.js"></script>
+	<script type="text/javascript" src="/static/admin/js/vue.min.js"></script>
 </head>
 <body>
 	<div class="breadcrub">
 			当前位置：新闻管理>新闻审核
 			<form class="news_filter_form">
-				<input type="text" placeholder="请输入关键字" class="input_txt">
+				<input type="text" id="input_txt" placeholder="请输入关键字" class="input_txt">
 				<input type="submit" value="搜 索" class="input_sub">
 			</form>
 		</div>
@@ -26,24 +27,17 @@
 					<th width="5%">状态</th>
 					<th width="8%">管理操作</th>
 				</tr>
-                {% for news in news_list %}
-                    <tr>
-                        <td>{{ news.id }}</td>
-                        <td class="tleft">{{ news.title }}</td>
-                        <td>{{ news.create_time }}</td>
-                        <td>已通过</td>
-                        {% if news.status==1 %}
-                            <td>审核中</td>
-                        {% elif news.status==2 %}
-                            <td>已通过</td>
-                        {% elif news.status ==3 %}
-                            <td>未通过</td>
-                        {% endif %}
-                        <td>
-                            <a href="news_review_detail.html" class="review">审核</a>
-                        </td>
-                    </tr>
-                {% endfor %}
+                <tr v-for="news in news_list">
+                    <td>[[ news.id ]]</td>
+                    <td class="tleft">[[ news.title ]]</td>
+                    <td>[[ news.create_time ]]</td>
+                    <td v-if="news.status==1">审核中</td>
+                    <td v-else-if="news.status==2">已通过</td>
+                    <td v-else>未通过</td>
+                    <td>
+                        <a :href="'/admin/news_review_detail/'+news.id" class="review">审核</a>
+                    </td>
+                </tr>
 			</table>
 		</div>
 
@@ -52,18 +46,55 @@
 		</div>
 
         <script>
-			$(function() {
-				$("#pagination").pagination({
-					currentPage: {{ page }},
-					totalPage: {{ total_page }},
-					callback: function(current) {
-{#					    alert('ok!');#}
-                        location.href='?page=' +current
-					}
-				});
-			});
+            var input_txt = '';
+            // 创建vue对象
+            $(function () {
+                vue_list_con = new Vue({
+                    el:'.common_table',
+                    delimiters:['[[',']]'],
+                    data:{
+                        // 这里是vue定义的空列表，用来存传过来的news_list
+                        news_list:[]
+                    }
+                });
+                // 获取数据并实现分页
+                get_news_json();
+
+                // 搜索
+                $('.news_filter_form').submit(function (e) {
+                    // 阻止默认提交
+                    e.preventDefault();
+                    input_txt = $('#input_txt').val();
+                    get_news_json();
+                })
+            });
+
+
+            function get_news_json() {
+                $.get('/admin/news_review_json',{
+                    'input_txt':input_txt
+                },function (data) {
+                    // 将数据显示到表格中
+                    vue_list_con.news_list = data.news_list;
+                    // 初始化分页页码
+                    $("#pagination").pagination({
+					    currentPage: 1,
+					    totalPage: data.total_page,
+					    callback: function(current) {
+					        $.get('/admin/news_review_json',{
+					            // 传回点击的当前页，让视图函数重新分页，实现翻页
+					            'page':current,
+                                'input_txt':input_txt
+                            },function (data) {
+                                vue_list_con.news_list = data.news_list;
+                            });
+                        }
+					});
+                });
+            }
+
 		</script>
 
-	
+
 </body>
 </html>

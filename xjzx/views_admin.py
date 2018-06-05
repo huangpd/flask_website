@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Blueprint
+from flask import Blueprint, jsonify
 from flask import abort
 from flask import current_app
 from flask import g
@@ -8,8 +8,9 @@ from flask import redirect
 from flask import render_template
 from flask import request
 from flask import session
+from utils.qiniu_xjzx import upload_pic
 
-from models import UserInfo,NewsInfo
+from models import UserInfo, NewsInfo, db, NewsCategory
 
 admin_blueprint = Blueprint('admin', __name__, url_prefix='/admin')
 
@@ -133,30 +134,166 @@ def user_list():
     )
 
 
+# 新闻审核列表
 @admin_blueprint.route('/news_review')
 def news_review():
+    return render_template('admin/news_review.html')
+
+
+# 审核页面
+@admin_blueprint.route('/news_review_detail/<int:news_id>', methods=['GET', 'POST'])
+def news_review_detail(news_id):
+    news = NewsInfo.query.get(news_id)
+    if request.method == 'GET':
+        return render_template('admin/news_review_detail.html', news=news)
+    elif request.method == 'POST':
+        action = request.form.get('action')
+        reason = request.form.get('reason')
+        if action == 'accept':
+            news.status = 2
+        else:
+            news.status = 3
+            news.reason = reason
+        db.session.commit()
+        return redirect('/admin/news_review')
+
+
+@admin_blueprint.route('/news_review_json')
+def news_review_json():
     page = int(request.args.get('page', '1'))
-    pagenation = NewsInfo.query.order_by(NewsInfo.id).paginate(page, 10, False)
-    news_list = pagenation.items
+    # 实现搜索
+    input_txt = request.args.get('input_txt')
+    pagenation = NewsInfo.query
+    if input_txt:
+        pagenation = pagenation.filter(NewsInfo.title.contains(input_txt))
+    pagenation = pagenation.order_by(NewsInfo.id.desc()).paginate(page, 10, False)
+    news_list1 = pagenation.items
     total_page = pagenation.pages
 
-    return render_template(
-        'admin/news_review.html',
-        page=page,
-        news_list=news_list,
-        total_page=total_page
-    )
+    # 转json数据
+    news_list2 = []
+    for news in news_list1:
+        news_dict = {
+            'id': news.id,
+            'title': news.title,
+            'create_time': news.create_time.strftime('%Y-%m-%d %H:%M:%S'),
+            'status': news.status
+        }
+        news_list2.append(news_dict)
+
+    # 不需要传页码，相当于每次都要重新请求数据
+    return jsonify(news_list=news_list2, total_page=total_page)
 
 
 @admin_blueprint.route('/news_edit')
 def news_edit():
-    return render_template(
-        'admin/news_edit.html'
-    )
+    return render_template('admin/news_edit.html')
+
+
+@admin_blueprint.route('/news_edit_detail/<int:news_id>', methods=['GET', 'POST'])
+def news_edit_detail(news_id):
+    news = NewsInfo.query.get(news_id)
+    if request.method == 'GET':
+        category_list = NewsCategory.query.all()
+        return render_template(
+            'admin/news_edit_detail.html',
+            news=news,
+            category_list=category_list
+        )
+    elif request.method == 'POST':
+        dict1 = request.form
+        title = dict1.get('title')
+        category_id = dict1.get('category_id')
+        summary = dict1.get('summary')
+        content = dict1.get('content')
+        # 接受图片文件
+        pic = request.files.get('pic')
+        if pic:
+            pic_name = upload_pic(pic)
+            news.pic = pic_name
+        # 修改对象的属性
+        news.title = title
+        news.category_id = int(category_id)
+        news.summary = summary
+        news.content = content
+        news.update_time = datetime.now()
+        # 保存
+        db.session.commit()
+        # 响应
+        return redirect('/admin/news_edit')
+
+
+@admin_blueprint.route('/news_edit_json')
+def news_edit_json():
+    # 接收
+    input_txt = request.args.get('input_txt')
+    page = int(request.args.get('page', '1'))
+    # 处理
+    pagination = NewsInfo.query
+    if input_txt:
+        pagination = pagination.filter(NewsInfo.title.contains(input_txt))
+    pagination = pagination.order_by(NewsInfo.id.desc()).paginate(page, 10, False)
+    # 获取当前页数据
+    news_list1 = pagination.items
+    # 获取总页码值
+    total_page = pagination.pages
+    # 将news对象转json
+    news_list2 = []
+    for news in news_list1:
+        news_dict = {
+            'id': news.id,
+            'title': news.title,
+            'create_time': news.create_time.strftime('%Y-%m-%d %H:%M:%S')
+        }
+        news_list2.append(news_dict)
+    # 响应
+    return jsonify(news_list=news_list2, total_page=total_page)
 
 
 @admin_blueprint.route('/news_type')
 def news_type():
-    return render_template(
-        'admin/news_type.html'
-    )
+    return render_template('admin/news_type.html')
+
+
+@admin_blueprint.route('/news_type_list')
+def news_type_list():
+    category_list1 = NewsCategory.query.all()
+    category_list2 = []
+    for category in category_list1:
+        category_dict = {
+            'id': category.id,
+            'name': category.name
+        }
+        category_list2.append(category_dict)
+    return jsonify(category_list=category_list2)
+
+
+@admin_blueprint.route('/news_type_add', methods=['POST'])
+def news_type_add():
+    name = request.form.get('name')
+    # 验证：名称是否存在
+    name_exists = NewsCategory.query.filter_by(name=name).count()
+    if name_exists > 0:
+        return jsonify(result=2)
+    # 添加
+    category = NewsCategory()
+    category.name = name
+    db.session.add(category)
+    db.session.commit()
+    return jsonify(result=1)
+
+
+@admin_blueprint.route('/news_type_edit', methods=['POST'])
+def news_type_edit():
+    cid = request.form.get('id')
+    name = request.form.get('name')
+    # 验证：名称是否存在
+    name_exists = NewsCategory.query.filter_by(name=name).count()
+    if name_exists > 0:
+        return jsonify(result=2)
+    # 修改
+    category = NewsCategory.query.get(cid)
+    category.name = name
+    db.session.commit()
+
+    return jsonify(result=1)

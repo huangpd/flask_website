@@ -9985,3 +9985,747 @@ INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 21:58:48] "GET /admin/user_count
 INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 21:58:48] "GET /favicon.ico HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 21:58:50] "GET /favicon.ico HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 21:58:51] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/js/index.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/images/clock.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /static/news/images/hit_icon.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /newslist?page=1&category=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:51] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:06:56] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_user.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/js/index.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/images/clock.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /static/news/images/hit_icon.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /newslist?page=1&category=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:40] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /static/admin/images/icons.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:45] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:46] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:48] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:56] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:56] "GET /newslist?page=1&category=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:12:56] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:04] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:09] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:18] "POST /user/logout HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:21] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:29] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 16:13:30] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:10:57] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:10:59] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:10:59] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:10:59] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:10:59] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:10:59] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:11:24] "GET /admin/news_review_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:11:26] "GET /admin/news_review_json?page=1&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:11:27] "GET /admin/news_review_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:11:28] "GET /admin/news_review_json?page=1&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:27] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:30] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:30] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:41] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:42] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:43] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:43] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:43] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:44] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:44] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:44] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:44] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:13:59] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:27] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:33] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:34] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:34] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:36] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:36] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:36] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:36] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:36] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:39] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:14:43] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:38] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:39] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:44] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:45] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:45] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:45] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:45] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:45] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:48] "GET /admin/news_review_json?input_txt=%E8%80%81%E7%8E%8B HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:51] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:53] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:54] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:54] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:54] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:54] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:54] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /admin/news_review_detail.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:16:56] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:20:50] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:20:50] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:20:50] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:20:50] "GET /admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:20:50] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:20:50] "GET /admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:06] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:06] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:06] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:06] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:06] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:07] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:07] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:07] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:07] "GET /admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:07] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:21:07] "GET /admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:01] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:02] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:03] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:04] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:04] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:57:06] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:58:01] "GET /admin/news_edit_json HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:58:01] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:58:21] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:58:22] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:58:23] "GET /admin/news_edit_json?page=1&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 17:59:30] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/images/icons.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:08] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:09] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:09] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:10] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:10] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:10] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:10] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:10] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:11] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:11] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:01:13] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:03:32] "GET /admin/news_edit_json?page=1&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:04:14] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:04:15] "GET /admin/news_edit_json?page=1&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:04:27] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:51] "GET /admin/news_edit_json?page=1&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:53] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:53] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:54] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:55] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:57] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:57] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:57] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:57] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:05:57] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:06:01] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:07:16] "GET /admin/news_edit_json?page=1&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:07:19] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:09:59] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:00] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:00] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:01] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:01] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:01] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:01] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:02] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:08] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:08] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:10:12] "GET /admin/news_edit_json?page=2&input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:26] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:27] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:27] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:29] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:29] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:29] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:29] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 18:11:29] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:11] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:11] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /admin/news_review_detail.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:13] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:19] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:20] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:22] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:23] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:23] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:23:24] "GET /admin/news_review_detail.html HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:24:30] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:24:30] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:24:30] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:24:30] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:24:30] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:24:32] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:24:32] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:25:37] "GET /admin/news_review_detail.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:22] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:23] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:24] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:25] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:25] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:28] "GET /admin/news_review_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:28] "GET /static/admin/tinymce/js/tinymce/tinymce.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:28] "GET /static/admin/js/news_review_detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:28] "GET /static/admin/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:28] "GET /static/admin/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:28] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:29] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:28:29] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:00] "POST /admin/news_review_detail/18 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:00] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:00] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:02] "GET /admin/news_review_detail/17 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:11] "POST /admin/news_review_detail/17 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:11] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:11] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:16] "GET /admin/news_review_detail/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:25] "POST /admin/news_review_detail/14 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:25] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:25] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:29] "GET /admin/news_review_detail/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:32] "POST /admin/news_review_detail/14 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:32] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:29:32] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token has expired.
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:32] "POST /user/logout HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token has expired.
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:33] "POST /user/logout HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET /static/news/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET /static/news/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:37] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:38] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:38] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:38] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:38] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:38] "GET /newslist?page=1&category=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:38] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:39] "POST /user/logout HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:40] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:49] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:51] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:51] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:51] "GET /user/base HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:51] "GET /static/news/js/user_base_info.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:51] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:52] "GET /user/newslist HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:52] "GET /static/news/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:52] "GET /static/news/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 20:59:52] "GET /static/news/images/tip_bg.png HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:05] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:05] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:06] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:06] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:06] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:08] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:08] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:09] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:09] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:09] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:09] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:09] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:46] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:46] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:46] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:46] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:46] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:47] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:47] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:47] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:47] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:47] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:49] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:51] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:51] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:51] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:51] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:51] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:57] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:29:57] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /admin/news_edit_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/js/tinymce_setup.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/js/news_edit_detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/css/style.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:01] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/img/icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:30:02] "GET /static/admin/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:28] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:28] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:31] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:32] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:32] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:34] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:34] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:34] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:34] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:34] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:36] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:36] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:38] "GET /admin/news_edit_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:48:54] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css.map HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:20] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:20] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:20] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:20] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:20] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:20] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:27] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:27] "GET /admin/news_edit_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:27] "GET /static/admin/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:27] "GET /static/admin/tinymce/js/tinymce/tinymce.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:27] "GET /static/admin/js/tinymce_setup.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:27] "GET /static/admin/js/news_edit_detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:28] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/img/icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:29] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css.map HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:31] "POST /admin/news_edit_detail/18 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:31] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:31] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:39] "GET /admin/news_edit_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:47] "GET /admin/news_edit_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:55] "POST /admin/news_edit_detail/18 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:55] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:49:55] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:00] "GET /admin/news_edit_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:12] "POST /admin/news_edit_detail/18 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:12] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:12] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /static/admin/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:16] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:20] "GET /admin/news_edit_detail/17 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:25] "POST /admin/news_edit_detail/17 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:25] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:25] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:49] "GET /admin/news_edit_json HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:50:49] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:36] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:43] "GET /admin/news_edit_detail/17 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:49] "POST /admin/news_edit_detail/17 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:49] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:50] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:51] "GET /admin/news_edit_detail/18 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:58] "POST /admin/news_edit_detail/18 HTTP/1.1" 302 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:58] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:51:58] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:52:33] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:52:34] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:52:34] "GET /admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:52:34] "GET /admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:52:34] "GET /admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:52:34] "GET /admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:54:47] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:54:47] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:54:47] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:54:47] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:54:47] "GET /static/admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:54:48] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 21:54:49] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:05:25] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:05:25] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:05:25] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:05:25] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:05:25] "GET /static/admin/js/news_type.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:05:25] "GET /static/admin/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:35] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:35] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:35] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:35] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:35] "GET /static/admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:35] "GET /static/admin/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:35] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:44] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:44] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:44] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:44] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:44] "GET /static/admin/js/news_type.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:44] "GET /static/admin/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:44] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:49] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:50] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:50] "GET /static/admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:50] "GET /static/admin/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:50] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:56] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:09:56] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/images/icons.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:21] "GET /static/admin/js/echarts.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:22] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:30] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:30] "GET /admin/news_review_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:31] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:31] "GET /admin/news_edit_json?input_txt= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:31] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:31] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:32] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:12:32] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/flask_website/xjzx/views_admin.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 256-168-841
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:29] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:29] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:29] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:29] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:29] "GET /static/admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:29] "GET /static/admin/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:29] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:41] "POST /admin/news_type_add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:28:41] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:29:41] "POST /admin/news_type_edit HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:29:41] "GET /admin/news_type_list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:30:28] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:30:28] "GET /static/admin/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:30:28] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:30:28] "GET /static/admin/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:30:28] "GET /static/admin/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:30:28] "GET /static/admin/js/news_type.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [05/Jun/2018 22:30:28] "GET /admin/news_type_list HTTP/1.1" 200 -
